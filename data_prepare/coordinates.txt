@@ -1,0 +1,8 @@
+{
+'Location': 'Ruamrudee International School Ratchapruek Campus Bangkok',
+'Latitude': '13.8394235',
+'Longitude': '100.4553922',
+'Website': 'http://www.risr.ac.th/',
+'Image URL': 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=1024&photoreference=Aaw_FcJp5twKeikCgHAUo2nzvRUwU6mrUO_cq1-dzMlObuDTs7Lr7gS-g4p2pEQ0T93e9Js0cfAzE-QcEIpAJG8zi664X08LO0JcxEaVdNkGDU-dT0zy8m4NMpJFfcyh0iWDMamaFuQlwQi5lBiJKUrc09eJ54OVcsYN6Sxo1pny8DhEW40L&key=AIzaSyCATQOeaNUfVnUCoOkr3DE4Ss8pPhtjlkg'
+},
+

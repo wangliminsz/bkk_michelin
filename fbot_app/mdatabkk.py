@@ -21,66 +21,59 @@ from linebot.models import *
 
 from fbot_app.mdata import *
 
-# mbkk = mdata
-
 def calDistance(latX, lngY, userInfo):
 
-    # print('inside the function location message ---------------------')
-    # print(userInfo)
-    # print('inside the function location message ---------------------')
+    # userCal = mbkkstyle.objects.filter(mbuserid=userInfo).last()
+    # # print(userCal.mbfoodstyle)
+    # # print('from DB --- inside the function location message ---------------------')
 
-    userCal = mbkkstyle.objects.filter(mbuserid=userInfo).last()
-    # print(userCal.mbfoodstyle)
-    # print('from DB --- inside the function location message ---------------------')
+    # # mbkkstyle.objects.create(mbuserid=thisUser, mbfoodstyle=thisStyle)
+    # if userCal.mbfoodstyle == 'all':
+    #     mbkk = mdata
+    # elif userCal.mbfoodstyle == 'streetfood':
+    #     mbkk = mdata_streetfood
+    # elif userCal.mbfoodstyle == 'thai':
+    #     mbkk = mdata_thai
+    # elif userCal.mbfoodstyle == 'europen':
+    #     mbkk = mdata_europen
+    # elif userCal.mbfoodstyle == 'chinese':
+    #     mbkk = mdata_chinese
+    # elif userCal.mbfoodstyle == 'japanese':
+    #     mbkk = mdata_japanese
+    # elif userCal.mbfoodstyle == 'others':
+    #     mbkk = mdata_others
 
-    # mbkkstyle.objects.create(mbuserid=thisUser, mbfoodstyle=thisStyle)
-    if userCal.mbfoodstyle == 'all':
-        mbkk = mdata
-    elif userCal.mbfoodstyle == 'streetfood':
-        mbkk = mdata_streetfood
-    elif userCal.mbfoodstyle == 'thai':
-        mbkk = mdata_thai
-    elif userCal.mbfoodstyle == 'europen':
-        mbkk = mdata_europen
-    elif userCal.mbfoodstyle == 'chinese':
-        mbkk = mdata_chinese
-    elif userCal.mbfoodstyle == 'japanese':
-        mbkk = mdata_japanese
-    elif userCal.mbfoodstyle == 'others':
-        mbkk = mdata_others
+    # # print("latX ---------------", latX)
+    # # print("lngY ---------------", lngY)
+    # # print("--------------------------")
 
-    # print("latX ---------------", latX)
-    # print("lngY ---------------", lngY)
-    # print("--------------------------")
-
+    mbkk = mdata_ranks
+    
     for mbkk_location in mbkk:
         # print(mbkk_location['mblat'],mbkk_location['mblng'])
-        latDiff = abs(latX - mbkk_location['mblat'])
-        lngDiff = abs(lngY - mbkk_location['mblng'])
+        latDiff = abs(latX - mbkk_location['lat'])
+        lngDiff = abs(lngY - mbkk_location['lng'])
         totalDiff = pow(latDiff, 2) + pow(lngDiff, 2)
 
         myDistance = pow(totalDiff, 0.5)
 
-        mbkk_location['mbdistance'] = myDistance
-
-    # print(mbkk[0])
+        mbkk_location['distance'] = myDistance
 
     # mbkk.sort(key=lambda x: x['mbdistance'], reverse=False)
     # OK
 
-    mbkk1 = sorted(mbkk, key=lambda x: x['mbdistance'], reverse=False)
+    # mbkk1 = sorted(mbkk, key=lambda x: x['mbdistance'], reverse=False)
+    # print('new mbkk---------------------------->', mbkk)
 
-    return(mbkk1)
+    return(mbkk)
 
 # -----------------------------------------------------------------
 
-
 def theLocation(theIdx):
 
-    mLoc = mdata[int(theIdx)-1]
-    # print(mLoc)
-    # print('=========================================')
+    mLoc = mdata_ranks[int(theIdx)-1]
 
-    lmessage = LocationSendMessage(title= mLoc['mbname'], address = mLoc['mbaddress'], latitude = mLoc['mblat'], longitude = mLoc['mblng'])
+    # lmessage = LocationSendMessage(title= mLoc['mbname'], address = mLoc['mbaddress'], latitude = mLoc['mblat'], longitude = mLoc['mblng'])
+    lmessage = LocationSendMessage(title= mLoc['school_name'], address = 'Address', latitude = mLoc['lat'], longitude = mLoc['lng'])
 
     return lmessage

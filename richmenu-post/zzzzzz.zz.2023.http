@@ -3,18 +3,19 @@
 ### 成功，第二步，上传图片
 # 2022-1-20---------------------------------------------------------------
 ###
-POST https://api-data.line.me/v2/bot/richmenu/richmenu-d5da634dd2f7504e06b139122752c41f/content
-Content-Type: image/png
-Authorization: Bearer {{apikey_2023_ant_nearby }}
 
-# < ./richmenu-0000.png
-< ./richmenu-2022-02-27.jpg
+POST https://api-data.line.me/v2/bot/richmenu/richmenu-cf9e2acec3fe2fa0b74b1ea025ab42c1/content
+Content-Type: image/png
+Authorization: Bearer {{apikey_schools}}
+
+< ./richmenu-2023-06-30.jpg
+
 ###
 ###------WebKitFormBoundary7MA4YWxkTrZu0gW--
 ### 成功，第三步，将 richmenu 设为当前的
 # 2022-1-20---------------------------------------------------------------
-POST https://api.line.me/v2/bot/user/all/richmenu/richmenu-d5da634dd2f7504e06b139122752c41f
-Authorization: Bearer {{apikey_2023_ant_nearby }}
+POST https://api.line.me/v2/bot/user/all/richmenu/richmenu-cf9e2acec3fe2fa0b74b1ea025ab42c1
+Authorization: Bearer {{apikey_schools}}
 
 ### 2022--1-27 Bkk
 # https://liff.line.me/1645278921-kWRPP32q/?accountId=054alhst"
@@ -24,7 +25,7 @@ Authorization: Bearer {{apikey_2023_ant_nearby }}
 ### 第一步 BKK ver 2022-01-27
 POST https://api.line.me/v2/bot/richmenu
 Content-Type: application/json
-Authorization: Bearer {{apikey_2023_ant_nearby }}
+Authorization: Bearer {{apikey_schools}}
 
 {
   "size": {
@@ -33,7 +34,7 @@ Authorization: Bearer {{apikey_2023_ant_nearby }}
   },
   "selected": true,
   "name": "Rich Menu 1",
-  "chatBarText": "Ant Nearby",
+  "chatBarText": "Bkk Schools",
   "areas": [
     {
       "bounds": {
@@ -44,7 +45,7 @@ Authorization: Bearer {{apikey_2023_ant_nearby }}
       },
       "action": {
         "type": "message",
-        "text": "Let's explore..."
+        "text": "Bkk Schools"
       }
     },
     {
@@ -56,7 +57,7 @@ Authorization: Bearer {{apikey_2023_ant_nearby }}
       },
       "action": {
         "type": "uri",
-        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=668slmav"
+        "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=859vopiw"
       }
     },
     {
@@ -69,11 +70,15 @@ Authorization: Bearer {{apikey_2023_ant_nearby }}
 
        "action": {
         "type": "postback",
-        "text": "About Ant Nearby",
+        "text": "About Ant Global",
         "data": "mcontact&"
       }
     }
   ]
 }
+
+###
+
+@apikey_schools = qyzmb2ClC0F3+3TjWkbMCwAxmnuJ+vm41mwLvKMolin45Oj9hJk9ypM+0J0FyKhFP/cfo9B2RmBdi+BIR2xs9/dZIA4l87aRUESB5ZfLQGZ+wnv8ErsI/lXt83wo5eBllXdPnOSRrVVYtqO2hf4VTwdB04t89/1O/w1cDnyilFU=
 
 ###

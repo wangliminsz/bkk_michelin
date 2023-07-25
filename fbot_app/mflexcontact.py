@@ -9,7 +9,6 @@ from linebot.models import *
 
 from fbot_app.mdata import *
 
-
 def flex_Contact():
     # print(mybkklist[0]['mbname'])
     # print(mybkklist[0]['mbstyle'])
@@ -30,7 +29,7 @@ def flex_Contact():
                     "size": "full",
                     "aspectRatio": "20:13",
                     "aspectMode": "cover",
-                    "url": "https://bkkmichelin.herokuapp.com/media/daisy-20-13.jpg"
+                    "url": "https://i.imgur.com/NwnxohC.jpg"
                 },
         "body": {
                     "type": "box",

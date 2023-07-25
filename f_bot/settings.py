@@ -30,10 +30,15 @@ SECRET_KEY = 'django-insecure-$a&3c*486b2^)3@z_8f1oxuhlh$k8x=yuyh@m672*v^%cfiome
 
 # --------------------------------
 
-# 2022-01-27 Bkk Ver 1
+# 2022-01-27 Bkk Michelin Ver 1
+# LINE_CHANNEL_ACCESS_TOKEN = 'aqekULWhc+iZEpitXvPGBKvmGm99S64/JmptZPVX+s/aRuNN1z2dhorYaFgh0NIFlZQsTKSA+WId1df14vKR55kmEH0BcNPCyv7Kijox4G47MDH1ufxHPQlm0UrNcqWkm4fOVmaa/IAdAS66KTGeHgdB04t89/1O/w1cDnyilFU='
+# LINE_CHANNEL_SECRET = 'ad1bdcd04c0c3e13a3385213f83954e9'
+# 2022-01-27 Bkk Michelin Ver 1
 
-LINE_CHANNEL_ACCESS_TOKEN = 'aqekULWhc+iZEpitXvPGBKvmGm99S64/JmptZPVX+s/aRuNN1z2dhorYaFgh0NIFlZQsTKSA+WId1df14vKR55kmEH0BcNPCyv7Kijox4G47MDH1ufxHPQlm0UrNcqWkm4fOVmaa/IAdAS66KTGeHgdB04t89/1O/w1cDnyilFU='
-LINE_CHANNEL_SECRET = 'ad1bdcd04c0c3e13a3385213f83954e9'
+# 2023-07-24 Bkk Schools Ver 1
+LINE_CHANNEL_ACCESS_TOKEN = 'qyzmb2ClC0F3+3TjWkbMCwAxmnuJ+vm41mwLvKMolin45Oj9hJk9ypM+0J0FyKhFP/cfo9B2RmBdi+BIR2xs9/dZIA4l87aRUESB5ZfLQGZ+wnv8ErsI/lXt83wo5eBllXdPnOSRrVVYtqO2hf4VTwdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET = '2befd595307c5f05af1ce8584ac55f8e'
+# 2023-07-24 Bkk Schools Ver 1
 
 # 2022-01-27 Bkk Ver 1
 # ---------------------

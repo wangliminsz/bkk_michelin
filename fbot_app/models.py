@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class poempoem(models.Model):
     poemid = models.IntegerField()  # 序號
     poemen1 = models.TextField()  # 英文
